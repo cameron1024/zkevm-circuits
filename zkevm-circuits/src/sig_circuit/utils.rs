@@ -75,8 +75,9 @@ pub(crate) struct AssignedECDSA<F: Field, FC: FieldChip<F>> {
     pub(super) sig_is_valid: AssignedValue<F>,
 }
 
+#[allow(missing_docs)]
 #[derive(Debug, Clone)]
-pub(crate) struct AssignedSignatureVerify<F: Field> {
+pub struct AssignedSignatureVerify<F: Field> {
     pub(crate) address: AssignedValue<F>,
     pub(crate) msg_len: usize,
     pub(crate) msg_rlc: Value<F>,
@@ -84,7 +85,7 @@ pub(crate) struct AssignedSignatureVerify<F: Field> {
     pub(crate) r_rlc: AssignedValue<F>,
     pub(crate) s_rlc: AssignedValue<F>,
     pub(crate) v: AssignedValue<F>,
-    pub(crate) sig_is_valid: AssignedValue<F>,
+    pub sig_is_valid: AssignedValue<F>,
 }
 
 pub(super) struct SignDataDecomposed<F: Field> {

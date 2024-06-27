@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use eth_types::{
     constants::SCROLL_COINBASE,
     geth_types::{self, Account, BlockConstants},
